@@ -6,9 +6,14 @@ Huge credit and thanks to Zazzmatazz for help figuring out packet format! Seriou
 
 Thanks to Zenairo of the [RGB.Net](https://github.com/DarthAffe/RGB.NET) dev discord for packet-snooping tips.
 
+**Note: LED support hasn't been added here yet, just the packet stuff**
+
+#### HidSharp Issues:
+
+The headset sends interrupt packets of several different formats, though we only care about the five-byte packets starting with `0x64` and ending with `0x01` or `0x05`. HidSharp _usually_ gets the right ones (and only the right ones), but sometimes it grabs only three-byte packets (which look like volume rocker info), and sometimes it grabs nothing. Still looking into that.
+
 #### Limitations:
 
-- Does not update keyboard/mouse LEDs yet (soon™)
 - Supports only the Void Pro, as of yet
 - Only tested on Windows 10, version 1607
 - I have no idea whether specific drivers are required by HidSharp
