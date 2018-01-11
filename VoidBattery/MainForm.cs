@@ -102,6 +102,10 @@ namespace VoidBattery
                     if (buf.Length != 5)
                         continue;
 
+                    // indicators
+                    if (buf[0] != 0x64 || buf[4] != 0x01)
+                        continue;
+
                     int value = buf[2] & 0x7F;
                     Debug.WriteLine($"Registering new value: {value}");
 
