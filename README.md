@@ -2,7 +2,7 @@
 
 Adjusts keyboard and mouse LEDs to indicate Void Pro headset battery level. I should preface this by stating that I have ~~no~~ some idea what I'm doing.
 
-Huge credit and thanks to Zazzmatazz for help figuring out packet format! Seriously, this would not be possible without him, a voltmeter, and a dream.
+Huge credit and thanks to Zazzmatazz for help figuring out packet format! Seriously, this would not be possible without him, a voltmeter, and a dream. Definitely not on such a short timescale.
 
 Thanks to Zenairo of the [RGB.Net](https://github.com/DarthAffe/RGB.NET) dev discord for packet-snooping tips.
 
@@ -32,3 +32,7 @@ Thanks to Zenairo of the [RGB.Net](https://github.com/DarthAffe/RGB.NET) dev dis
   - Power button down: hell if I know
 - `bb`: battery info. Uses the first bit as a flag for whether the mic boom is up or down, so we strip it (`&= 0x7F`)
 - `uu`: unknown. As of yet.
+
+#### Why.
+
+Corsair's CUE SDK doesn't support battery level for wireless peripherals yet (and probably never will, given CUE is aimed at manipulating LEDs, not battery level). So, this happened.
