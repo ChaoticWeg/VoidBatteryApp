@@ -12,6 +12,7 @@ Thanks to Zenairo of the [RGB.Net](https://github.com/DarthAffe/RGB.NET) dev dis
 - Supports only the Void Pro, as of yet
 - Only tested on Windows 10, version 1607
 - I have no idea whether specific drivers are required by HidSharp
+- I have no idea whether packet format is the same for other Corsair wireless peripherals
 - I have no plans to expand this project or make it portable, as of yet
 
 #### What it does (in the background):
