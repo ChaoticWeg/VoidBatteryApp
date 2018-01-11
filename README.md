@@ -26,7 +26,7 @@ Thanks to Zenairo of the [RGB.Net](https://github.com/DarthAffe/RGB.NET) dev dis
 
 `xx ii bb uu xx`
 
-- `xx`: delimiter (first byte `0x64`, last byte `0x01`, always)
+- `xx`: delimiter (first byte `0x64`, last byte `0x01` - or `0x05` when headset is plugged in - always)
 - `ii`: control indicator
   - Volume rocker up/down: `0x01`/`0x02`
   - Mute button down: `0x02`
